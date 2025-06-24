@@ -22,11 +22,4 @@ services:
 networks:
   pyspark-net:
 
-
-  services:
-  pyspark:
-    image: jupyter/pyspark-notebook:latest
-    ports:
-      - "8888:8888"
-    volumes:
-      - ./data:/home/jovyan/work
+entrypoint: sh -c "pip install pyspark && tail -f /dev/null"
