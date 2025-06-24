@@ -22,4 +22,4 @@ services:
 networks:
   pyspark-net:
 
-entrypoint: sh -c "pip install pyspark && tail -f /dev/null"
+entrypoint: ["/usr/local/bin/startup.sh"]
