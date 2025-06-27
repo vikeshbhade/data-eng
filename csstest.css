@@ -19,3 +19,28 @@
   background-color: #c3daf9;
   border-color: #7eadd9;
 }
+
+var panel = new Ext.Panel({
+  title: 'Control Panel',
+  width: 350,
+  height: 100,
+  renderTo: 'main',
+  layout: 'hbox',
+  layoutConfig: { align: 'middle', pack: 'start' },
+  bodyStyle: 'padding: 10px;',
+  items: [
+    {
+      xtype: 'box',
+      autoEl: { tag: 'label', html: 'Power:', style: 'margin-right: 10px; font-weight: bold;' }
+    },
+    {
+      xtype: 'button',
+      text: 'OFF',
+      enableToggle: true,
+      toggleHandler: function (btn, pressed) {
+        btn.setText(pressed ? 'ON' : 'OFF');
+      }
+    }
+  ]
+});
+
