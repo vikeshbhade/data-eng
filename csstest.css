@@ -1,0 +1,21 @@
+.custom-toggle-btn {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #99bbe8;
+  background: #dfe8f6 url(https://cdnjs.cloudflare.com/ajax/libs/extjs/3.4.1-1/resources/images/default/button/btn.gif) repeat-x 0 0;
+  color: #000;
+  font: normal 12px tahoma, arial, helvetica, sans-serif;
+  padding: 2px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.custom-toggle-btn:hover {
+  background-position: 0 -21px;
+}
+
+.custom-toggle-btn.pressed {
+  background-position: 0 -42px;
+  background-color: #c3daf9;
+  border-color: #7eadd9;
+}
